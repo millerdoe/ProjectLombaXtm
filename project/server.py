@@ -41,6 +41,7 @@ def Ai(query:str):
          )
             hasil_query = completion.choices[0].message.content
     except Exception as err:
+            hasil_query = "api key belum di set"
             print(err)
 
     return hasil_query
