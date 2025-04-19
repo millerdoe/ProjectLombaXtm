@@ -28,4 +28,13 @@ jika pip kuran
 
 pip install -r requirements.txt
 
+dapatkan api gratis untuk ai
+
+url: https://openrouter.ai/deepseek/deepseek-r1-distill-qwen-32b:free/api
+
+create api key 
+
+copy key
+
+paste di key/.env
 
