@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN</title>
+    <style type="text/css">
+        @import url(/static/css/perpustakaan.css);
+    </style>
+
+
+<body>
+    <div class="dashboard">
+
+        <div class="user-profile">
+            <img src="/static/img/logo-removebg-preview.png" alt="Foto Profil" class="avatar">
+            <div>
+                <h2>Selamat Datang, {{username}}</h2>
+                <div class="account-status">
+                    <span class="status-badge active">Aktif</span>
+                    <span>Anggota sejak: {{time}}</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="main-menu">
+            <div class="menu-container">
+                <ul type="li">
+
+                    <li><button type="button" onclick="content_kelas_10()">kelas 10</button></li>
+                    <li><button type="button" onclick="content_kelas_11()">kelas 11</button></li>
+                    <li><button type="button" onclick="content_kelas_12()">kelas 12</button></li>
+
+                </ul>
+                <a href="log_out" class="exit-button">Exit</a>
+            </div>
+        </nav>
+
+        <section class="content-section">
+            <h3><i class="icon-bookmark"></i>DAFTAR BUKU DI PERPUSTAKAAN SMKN 3 JAYAPURA</h3>
+            
+            <div class="content_kelas_10">
+                <p>list buku kelas 10</p>
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+            <div class="content_kelas_11">
+                <p>list buku kelas 11</p>
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_kelas_12">
+                <p>list buku kelas 12</p>
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>teknik dasar jaringan komputer</h4>
+                            <p>Penerbit jhon doe</p>
+                            <div class="rating">★★★☆☆</div>
+                            <div class="meta"></div>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Pemrograman Python untuk Pemula</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★☆☆☆</p>
+                        </div>
+                    </div>
+
+                    <div class="book-item">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                            alt="Cover Buku" class="book-cover">
+                        <div class="book-info">
+                            <h4>Belajar cepat Pemrograman web site</h4>
+                            <p>Penerbit jane doe</p>
+                            <p>★★★★☆</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p>rekomendasi buku</p>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>teknik dasar jaringan komputer</h4>
+                        <p>Penerbit jhon doe</p>
+                        <div class="rating">★★★☆☆</div>
+                        <div class="meta"></div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>Pemrograman Python untuk Pemula</h4>
+                        <p>Penerbit jane doe</p>
+                        <p>★★☆☆☆</p>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>Belajar cepat Pemrograman web site</h4>
+                        <p>Penerbit jane doe</p>
+                        <p>★★★★☆</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>teknik dasar jaringan komputer</h4>
+                        <p>Penerbit jhon doe</p>
+                        <div class="rating">★★★☆☆</div>
+                        <div class="meta">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>teknik dasar jaringan komputer</h4>
+                        <p>Penerbit jhon doe</p>
+                        <div class="rating">★★★☆☆</div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>teknik dasar jaringan komputer</h4>
+                        <p>Penerbit jhon doe</p>
+                        <div class="rating">★★★☆☆</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9PNHy-UlZ6SmKhAiqROnywAAAA%26pid%3DApi&f=1&ipt=07295eb3f575f3b6b8e2e3787a63cb85dbf2cea23158be8004575c3c235f0a67&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>teknik dasar jaringan komputer</h4>
+                        <p>Penerbit jhon doe</p>
+                        <div class="rating">★★★☆☆</div>
+                        <div class="meta"></div>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._fEraUlZPPcr6_58De-2_gHaEK%26pid%3DApi&f=1&ipt=cdb5efacd6633cf11ca07bd1cbc4228adfe185d240ed77a3e330474f00e98304&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>Pemrograman Python untuk Pemula</h4>
+                        <p>Penerbit jane doe</p>
+                        <p>★★☆☆☆</p>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.5bf1zSgoX7JwkMIE47gEVgAAAA%26pid%3DApi&f=1&ipt=766b70a351af9b1696e786fc3690d603c11289b0f17509bdb12e6cb87552ec6b&ipo=images"
+                        alt="Cover Buku" class="book-cover">
+                    <div class="book-info">
+                        <h4>Belajar cepat Pemrograman web site</h4>
+                        <p>Penerbit jane doe</p>
+                        <p>★★★★☆</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <cite>
+                <strong>catatan:</strong> bagi siswa yang ingin membaca, silahan datang ke perpus, saat waktu kosong
+            </cite>
+        </section>
+
+    </div>
+
+
+    <script>
+        function content_kelas_10() {
+            const kelas_10 = document.querySelector(".content_kelas_10")
+            const kelas_11 = document.querySelector(".content_kelas_11")
+            const kelas_12 = document.querySelector(".content_kelas_12")
+
+            if (kelas_10.style.display == "none") {
+                kelas_11.style.display = "none"
+                kelas_12.style.display = "none"
+                kelas_10.style.display = "flex"
+            } else {
+                kelas_10.style.display = "none"
+            }
+        }
+
+        function content_kelas_11() {
+            const kelas_10 = document.querySelector(".content_kelas_10")
+            const kelas_11 = document.querySelector(".content_kelas_11")
+            const kelas_12 = document.querySelector(".content_kelas_12")
+
+            if (kelas_11.style.display == "none") {
+                kelas_10.style.display = "none"
+                kelas_12.style.display = "none"
+                kelas_11.style.display = "flex"
+            } else {
+                kelas_11.style.display = "none"
+            }
+        }
+
+
+        function content_kelas_12() {
+            const kelas_10 = document.querySelector(".content_kelas_10")
+            const kelas_11 = document.querySelector(".content_kelas_11")
+            const kelas_12 = document.querySelector(".content_kelas_12")
+
+            if (kelas_12.style.display == "none") {
+                kelas_10.style.display = "none"
+                kelas_11.style.display = "none"
+                kelas_12.style.display = "flex"
+            } else {
+                kelas_12.style.display = "none"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

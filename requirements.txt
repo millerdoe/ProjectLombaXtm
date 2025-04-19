@@ -1,0 +1,9 @@
+python-dotenv
+requests
+googlesearch-python
+bs4
+re
+openai
+hashlib
+sqlite3
+flask
