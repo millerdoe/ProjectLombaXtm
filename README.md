@@ -3,6 +3,7 @@ video demo:
 cara menjalankan project 
 
 git clone https://github.com/millerdoe/ProjectLombaXtm.git
+
 cd ProjectLombaXtm
 
 linux:
