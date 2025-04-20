@@ -1,4 +1,4 @@
-video demo: 
+video demo: https://youtu.be/HURuDM5AGL8
 
 cara menjalankan project 
 
