@@ -1,9 +1,6 @@
 python-dotenv
 requests
 googlesearch-python
-bs4
-re
+Beautifulsoup4
 openai
-hashlib
-sqlite3
 flask
