@@ -1,6 +1,6 @@
 # ProjectLombaXtm
 
-🎥 **Demo Video**: <a href="https://youtu.be/ST8h6KwmlTw" target="_blank">nonton</a>
+🎥 **Demo Video**: <a href="https://youtu.be/ST8h6KwmlTw" target="_blank">pelajari</a>
 
 ## 🚀 Cara Menjalankan Project
 
