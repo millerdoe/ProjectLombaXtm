@@ -113,6 +113,7 @@ def index():
             kelas = session.get("kelas")
             time =  session.get("datetime")
             return render_template("perpustakaan.html", username=username, kelas=kelas, time=time)
+        
 
     return  redirect(url_for("home"))
 
@@ -130,6 +131,9 @@ def home():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    # admin
+    # admin123
+    #note: yang diberi akses ke route admin
     if request.method == "POST":
         username = request.form.get("username").lower()
         password =  request.form.get("password")
@@ -146,9 +150,11 @@ def login():
                         session["password"] = hess_passwd(password)
                         session["datetime"] = lihat_data[3]
                         return redirect(url_for("index"))
+                    
     if "username" in session:
         if "password" in session:
             return redirect(url_for("index"))
+
                     
                     
     return render_template("login.html")
@@ -210,6 +216,72 @@ def log_out():
 
     return redirect(url_for("index"))
 
+
+@app.route("/admin_login", methods=["POST", "GET"])
+def admin_login():
+#  membosankan777ngacor@gmail.com
+#  adminngacor54
+#  kaliber45_millerDOE
+
+    if 'username' not in session or "password" not in session or "kelas" not in session:
+        return redirect(url_for("index"))
+    
+    if request.method == "POST":
+       if request.form:
+           email = request.form.get("email")
+           username = request.form.get("username")
+           password = request.form.get("password")
+           
+           random = "dsahurf98347sdk" + password + "diosau97rlsdefasLUO&"
+           hassh = sha256(random.encode("UTF-8"))
+           get_hash = hassh.hexdigest()
+
+           with Connection("dbusers.db") as dbconn:
+                ijin = dbconn.cursor()
+                ijin.execute("select * from admin")
+                dataadmin = ijin.fetchall()
+                for data in dataadmin:
+                   if  email in data:
+                        if username in data:
+                            if get_hash in data:
+                               session["adminemail"] = email
+                               session["adminusername"] = username
+                               session["adminpassword"] = get_hash
+                               return redirect(url_for("admin"))
+                            
+    if "admin" in session.get("username"):
+        return render_template("admin_login.html")
+        
+
+     
+    return redirect(url_for("index"))
+
+
+@app.route("/admin", methods=["POST", "GET"])
+def admin():
+    database = []
+    
+    if 'adminemail' in session:
+        if 'adminusername'  in session: 
+            if  'adminpassword' in session:
+
+                with Connection("dbusers.db")as dbconn:
+                    ijin_exe_query = dbconn.cursor()
+                    ijin_exe_query.execute("SELECT * FROM users")
+                    database  = ijin_exe_query.fetchall()
+                    if request.method == "POST":
+                        if request.form:
+                            username = request.form.get("username")
+                            hapus_db = ijin_exe_query.execute("DELETE FROM users WHERE username=:username", {"username":username})
+                            if hapus_db:
+                                redirect(request.url)
+
+                dbconn.commit()
+                return render_template("admin.html", database=database)
+               
+   
+    return redirect(url_for("admin_login"))
+
 if __name__ == "__main__":
-    app.run(port=8000)
+    app.run(debug=True)
 
